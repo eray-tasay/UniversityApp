@@ -11,14 +11,14 @@ import java.util.List;
 import java.util.Set;
 import java.util.stream.StreamSupport;
 
-@Mapper(implementationName = "StudentMapperImpl", componentModel = "spring")
+@Mapper(implementationName = "StudentMapperSImpl", componentModel = "spring")
 public interface IStudentMapper {
     @Mapping(target = "fullName", expression = "java(getFullName(student.firstName, student.middleName, student.lastName))")
     StudentDTO toStudentDTO(Student student);
 
     default List<String> toDepartmentNames(Set<Department> departments)
     {
-        return departments.stream().map(Department::toString).toList();
+        return departments.stream().map(department -> department.name).toList();
     }
 
     default String getFullName(String firstName, String middleName, String lastName)

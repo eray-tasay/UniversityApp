@@ -6,7 +6,10 @@ import java.time.LocalDate;
 import java.util.Set;
 
 @Entity
-@Table(name = "students")
+@Table(name = "students", uniqueConstraints = {
+        @UniqueConstraint(name = "unique_email", columnNames = "email"),
+        @UniqueConstraint(name = "unique_citizen_id", columnNames = "citizen_id")
+})
 public class Student {
     @Id
     @Column(name = "student_id")
@@ -22,10 +25,10 @@ public class Student {
     @Column(name = "last_name", length = 100, nullable = false)
     public String lastName;
 
-    @Column(length = 200, nullable = false, unique = true)
+    @Column(length = 200, nullable = false)
     public String email;
 
-    @Column(name = "citizen_id", length = 11, nullable = false, unique = true)
+    @Column(name = "citizen_id", length = 11, nullable = false)
     public String citizenId;
 
     @Column(name = "birth_date")

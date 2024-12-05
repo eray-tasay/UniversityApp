@@ -25,6 +25,11 @@ public class StudentServiceHelper {
         return m_studentRepository.findById(id);
     }
 
+    public Optional<Student> findStudentByCitizenId(String citizenId)
+    {
+        return m_studentRepository.findStudentByCitizenId(citizenId);
+    }
+
     public Iterable<Student> findStudentsByDepartmentId(int departmentId)
     {
         return m_studentRepository.findStudentsByDepartmentId(departmentId);

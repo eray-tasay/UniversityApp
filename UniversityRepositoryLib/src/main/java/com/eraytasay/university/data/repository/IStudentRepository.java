@@ -10,7 +10,6 @@ import java.util.Optional;
 
 @Repository
 public interface IStudentRepository extends CrudRepository<Student, Integer> {
-    //Here will be changed...
     Optional<Student> findStudentByCitizenId(String citizenId);
 
     @Query("select s from Student s join s.departments d where d.id = :departmentId")

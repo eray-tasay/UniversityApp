@@ -1,10 +1,16 @@
 package com.eraytasay.university.data.mapper;
 
-import com.eraytasay.university.data.entity.dto.StudentSaveDTO;
+import com.eraytasay.university.data.entity.dto.StudentSaveWithDepartmentIdsDTO;
+import com.eraytasay.university.data.entity.dto.StudentSaveWithDepartmentNamesDTO;
 import com.eraytasay.university.data.entity.orm.Student;
 import org.mapstruct.Mapper;
+import org.mapstruct.Mapping;
 
 @Mapper(implementationName = "StudentSaveDTOMapperImpl", componentModel = "spring")
 public interface IStudentSaveDTOMapper {
-    Student toStudent(StudentSaveDTO student);
+    @Mapping(target = "departments", ignore = true)
+    Student toStudent(StudentSaveWithDepartmentIdsDTO studentSaveWithDepartmentIdsDTO);
+
+    @Mapping(target = "departments", ignore = true)
+    Student toStudent(StudentSaveWithDepartmentNamesDTO studentSaveWithDepartmentNamesDTO);
 }

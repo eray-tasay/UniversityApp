@@ -1,0 +1,15 @@
+curl -X POST http://localhost:8081/api/post/students/department/name \
+-H "Content-Type: application/json" \
+-d '{
+    "firstName": "John",
+    "middleName": "Michael",
+    "lastName": "Doe",
+    "email": "john.doe@example.com",
+    "citizenId": "123456789",
+    "birthDate": "2000-01-01",
+    "departments": ["Biological Engineering", "Economics"]
+}'
+
+curl -X POST http://localhost:8081/api/post/students/department/name -H "Content-Type: application/json" -d "{\"firstName\":\"John\",\"middleName\":\"Michael\",\"lastName\":\"Doe\",\"email\":\"john.doe@example.com\",\"citizenId\":\"123456789\",\"birthDate\":\"2000-01-01\",\"departments\":[\"Biological Engineering\",\"economics\"]}"
+curl -X POST http://localhost:8081/api/post/students/department/name -H "Content-Type: application/json" -d "{\"firstName\":\"Kerem\",\"lastName\":\"Akdemir\",\"email\":\"kerem.akdemir@example.com\",\"citizenId\":\"123446781\",\"birthDate\":\"2000-01-01\",\"departments\":[\"Electrical engineering and Computer science\"]}"
+curl -X POST http://localhost:8081/api/post/students/department/id -H "Content-Type: application/json" -d "{\"firstName\":\"Eray\",\"lastName\":\"Taşay\",\"email\":\"eray.tasay@example.com\",\"citizenId\":\"123456781\",\"birthDate\":\"2003-06-20\",\"departments\":[1, 3]}"

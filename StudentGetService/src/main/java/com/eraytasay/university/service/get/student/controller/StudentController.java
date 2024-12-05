@@ -23,6 +23,12 @@ public class StudentController {
         return m_studentService.findAllStudents();
     }
 
+    @GetMapping
+    public Optional<StudentDTO> findStudentByCitizenId(@RequestParam("cid") String citizenId)
+    {
+        return m_studentService.findStudentByCitizenId(citizenId);
+    }
+
     @GetMapping("{id}")
     public Optional<StudentDTO> findStudentById(@PathVariable int id)
     {

@@ -29,6 +29,11 @@ public class StudentService {
         return m_studentServiceHelper.findStudentById(id).map(m_studentMapper::toStudentDTO);
     }
 
+    public Optional<StudentDTO> findStudentByCitizenId(String citizenId)
+    {
+        return m_studentServiceHelper.findStudentByCitizenId(citizenId).map(m_studentMapper::toStudentDTO);
+    }
+
     public StudentsDTO findStudentByDepartmentId(int departmentId)
     {
         return m_studentMapper.toStudentsDTO(m_studentServiceHelper.findStudentsByDepartmentId(departmentId));
