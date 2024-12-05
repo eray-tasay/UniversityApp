@@ -1,0 +1,10 @@
+insert into semesters (year, type) values (2025, 'SPRING');
+insert into semesters (year, type) values (2025, 'FALL');
+insert into semesters (year, type) values (2024, 'SPRING');
+insert into semesters (year, type) values (2024, 'FALL');
+insert into semesters (year, type) values (2023, 'SPRING');
+insert into semesters (year, type) values (2022, 'FALL');
+insert into semesters (year, type) values (2021, 'SPRING');
+insert into semesters (year, type) values (2020, 'FALL');
+insert into semesters (year, type) values (2019, 'SPRING');
+insert into semesters (year, type) values (2018, 'FALL');
