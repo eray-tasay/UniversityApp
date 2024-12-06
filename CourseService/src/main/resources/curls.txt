@@ -1,0 +1,8 @@
+curl -X POST http://localhost:8084/api/post/courses \
+-H "Content-Type: application/json" \
+-d '{
+    "code": "CS-50",
+    "name": "Introduction to Computer Science"
+}'
+
+curl -X POST http://localhost:8084/api/post/courses -H "Content-Type: application/json" -d "{\"code\": \"CS-50\", \"name\": \"Introduction to Computer Science\"}"

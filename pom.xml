@@ -19,6 +19,9 @@
 		<module>UniversityRepositoryLib</module>
 		<module>LecturerPostService</module>
 		<module>LecturerGetService</module>
+        <module>CourseService</module>
+		<module>CourseInstanceService</module>
+		<module>CourseInstancePostService</module>
 	</modules>
 
 	<properties>

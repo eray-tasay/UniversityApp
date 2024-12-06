@@ -16,6 +16,7 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/CourseInstanceServiceHelper/pom.xml" />
         <option value="$PROJECT_DIR$/PreprocessingApps/ConcatenateFilesApp/pom.xml" />
       </set>
     </option>

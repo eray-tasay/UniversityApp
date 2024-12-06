@@ -2,11 +2,11 @@ package com.eraytasay.university.data.dal;
 
 import com.eraytasay.university.data.entity.orm.Lecturer;
 import com.eraytasay.university.data.repository.ILecturerRepository;
-import org.springframework.stereotype.Controller;
+import org.springframework.stereotype.Component;
 
 import java.util.Optional;
 
-@Controller
+@Component
 public class LecturerServiceHelper {
     private final ILecturerRepository m_lecturerRepository;
 
