@@ -1,4 +1,4 @@
-package com.eraytasay.university.data.entity.dto;
+package com.eraytasay.university.data.entity.dto.student;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 

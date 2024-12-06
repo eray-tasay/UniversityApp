@@ -1,6 +1,6 @@
 package com.eraytasay.university.data.mapper;
 
-import com.eraytasay.university.data.entity.dto.StudentDTO;
+import com.eraytasay.university.data.entity.dto.student.StudentDTO;
 import com.eraytasay.university.data.entity.orm.Department;
 import com.eraytasay.university.data.entity.orm.Student;
 import org.mapstruct.Mapper;

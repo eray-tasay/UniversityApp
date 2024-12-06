@@ -1,10 +1,10 @@
-package com.eraytasay.university.data.entity.dto;
+package com.eraytasay.university.data.entity.dto.lecturer;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 import java.time.LocalDate;
 
-public class StudentSaveDTO {
+public class LecturerSaveDTO {
     @JsonProperty(required = true)
     public String firstName;
 
@@ -14,10 +14,10 @@ public class StudentSaveDTO {
     public String lastName;
 
     @JsonProperty(required = true)
-    public String email;
+    public String citizenId;
 
     @JsonProperty(required = true)
-    public String citizenId;
+    public String email;
 
     @JsonProperty(required = true)
     public LocalDate birthDate;

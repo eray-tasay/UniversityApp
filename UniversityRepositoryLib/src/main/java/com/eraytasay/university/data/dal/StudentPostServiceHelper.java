@@ -1,8 +1,8 @@
 package com.eraytasay.university.data.dal;
 
-import com.eraytasay.university.data.entity.dto.StudentDTO;
-import com.eraytasay.university.data.entity.dto.StudentSaveWithDepartmentIdsDTO;
-import com.eraytasay.university.data.entity.dto.StudentSaveWithDepartmentNamesDTO;
+import com.eraytasay.university.data.entity.dto.student.StudentDTO;
+import com.eraytasay.university.data.entity.dto.student.StudentSaveWithDepartmentIdsDTO;
+import com.eraytasay.university.data.entity.dto.student.StudentSaveWithDepartmentNamesDTO;
 import com.eraytasay.university.data.mapper.IStudentMapper;
 import com.eraytasay.university.data.mapper.IStudentSaveDTOMapper;
 import com.eraytasay.university.data.repository.IStudentRepository;

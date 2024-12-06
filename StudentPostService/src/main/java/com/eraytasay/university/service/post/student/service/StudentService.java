@@ -1,9 +1,9 @@
 package com.eraytasay.university.service.post.student.service;
 
 import com.eraytasay.university.data.dal.StudentPostServiceHelper;
-import com.eraytasay.university.data.entity.dto.StudentDTO;
-import com.eraytasay.university.data.entity.dto.StudentSaveWithDepartmentIdsDTO;
-import com.eraytasay.university.data.entity.dto.StudentSaveWithDepartmentNamesDTO;
+import com.eraytasay.university.data.entity.dto.student.StudentDTO;
+import com.eraytasay.university.data.entity.dto.student.StudentSaveWithDepartmentIdsDTO;
+import com.eraytasay.university.data.entity.dto.student.StudentSaveWithDepartmentNamesDTO;
 import com.eraytasay.university.service.post.student.exception.unique.NotUniqueCitizenIdException;
 import com.eraytasay.university.service.post.student.exception.unique.NotUniqueEmailException;
 import org.springframework.dao.DataIntegrityViolationException;

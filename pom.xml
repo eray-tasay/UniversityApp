@@ -17,7 +17,8 @@
 		<module>StudentPostService</module>
 		<module>StudentGetService</module>
 		<module>UniversityRepositoryLib</module>
-		<module>ReplacePlaceholdersWithUniqueNumbersApp</module>
+		<module>LecturerPostService</module>
+		<module>LecturerGetService</module>
 	</modules>
 
 	<properties>

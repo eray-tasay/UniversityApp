@@ -1,6 +1,6 @@
 package com.eraytasay.university.service.get.student.mapper;
 
-import com.eraytasay.university.data.entity.orm.Department;
+import com.eraytasay.university.data.entity.orm .Department;
 import com.eraytasay.university.data.entity.orm.Student;
 import com.eraytasay.university.service.get.student.dto.StudentDTO;
 import com.eraytasay.university.service.get.student.dto.StudentsDTO;

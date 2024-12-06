@@ -1,7 +1,7 @@
 package com.eraytasay.university.service.post.student.controller;
 
-import com.eraytasay.university.data.entity.dto.StudentSaveWithDepartmentIdsDTO;
-import com.eraytasay.university.data.entity.dto.StudentSaveWithDepartmentNamesDTO;
+import com.eraytasay.university.data.entity.dto.student.StudentSaveWithDepartmentIdsDTO;
+import com.eraytasay.university.data.entity.dto.student.StudentSaveWithDepartmentNamesDTO;
 import com.eraytasay.university.data.exception.department.NoSuchDepartmentException;
 import com.eraytasay.university.data.exception.department.NotUniqueDepartmentException;
 import com.eraytasay.university.service.post.student.exception.unique.NotUniqueCitizenIdException;
