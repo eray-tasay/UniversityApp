@@ -9,9 +9,12 @@ import org.mapstruct.Mapping;
 
 @Mapper(implementationName = "CourseInstanceSaveDTOMapperImpl", componentModel = "spring")
 public interface ICourseInstanceSaveDTOMapper {
-    @Mapping(source = "semesterType", target = "type")
+    @Mapping(source = "semester.year", target = "year")
+    @Mapping(source = "semester.type", target = "type")
+    @Mapping(target = "id", ignore = true)
     Semester toSemester(CourseInstanceSaveDTO courseInstanceSaveDTO);
 
+    @Mapping(target = "classroom", ignore = true)
     CourseInstance toCourseInstance(CourseInstanceSaveDTO courseInstanceSaveDTO);
 
     @Mapping(source = "lecturerId", target = "id")

@@ -26,7 +26,6 @@ public class StudentPostServiceHelper {
         m_departmentUtil = departmentUtil;
     }
 
-    @Transactional(isolation = Isolation.SERIALIZABLE)
     public StudentDTO saveStudentWithDepartmentIds(StudentSaveWithDepartmentIdsDTO studentSaveWithDepartmentIdsDTO)
     {
         var student = m_studentSaveDTOMapper.toStudent(studentSaveWithDepartmentIdsDTO);
@@ -37,7 +36,6 @@ public class StudentPostServiceHelper {
         return m_studentMapper.toStudentDTO(student);
     }
 
-    @Transactional(isolation = Isolation.SERIALIZABLE)
     public StudentDTO saveStudentWithDepartmentNames(StudentSaveWithDepartmentNamesDTO studentSaveWithDepartmentNamesDTO)
     {
         var student = m_studentSaveDTOMapper.toStudent(studentSaveWithDepartmentNamesDTO);

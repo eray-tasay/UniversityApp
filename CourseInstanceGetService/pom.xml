@@ -6,7 +6,7 @@
         <artifactId>UniversityApp</artifactId>
         <version>1.0.0</version>
     </parent>
-    <artifactId>CourseInstanceService</artifactId>
+    <artifactId>CourseInstanceGetService</artifactId>
     <properties>
         <java.version>21</java.version>
     </properties>

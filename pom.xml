@@ -20,7 +20,7 @@
 		<module>LecturerPostService</module>
 		<module>LecturerGetService</module>
         <module>CourseService</module>
-		<module>CourseInstanceService</module>
+		<module>CourseInstanceGetService</module>
 		<module>CourseInstancePostService</module>
 	</modules>
 
@@ -63,6 +63,13 @@
 			<artifactId>mapstruct</artifactId>
 			<version>${org.mapstruct.version}</version>
 		</dependency>
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.18.30</version>
+			<scope>provided</scope>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -79,6 +86,11 @@
 							<groupId>org.mapstruct</groupId>
 							<artifactId>mapstruct-processor</artifactId>
 							<version>${org.mapstruct.version}</version>
+						</path>
+						<path>
+							<groupId>org.projectlombok</groupId>
+							<artifactId>lombok</artifactId>
+							<version>1.18.36</version>
 						</path>
 					</annotationProcessorPaths>
 				</configuration>

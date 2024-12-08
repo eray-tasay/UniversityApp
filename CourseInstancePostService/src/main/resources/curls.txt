@@ -1,0 +1,17 @@
+curl -X POST http://localhost:8086/api/post/courseInstances \
+-H "Content-Type: application/json" \
+-d '{
+    "courseCode": "YGW-577",
+    "lecturerId": 1,
+    "semester": {
+        "year": 2024,
+        "type": "SPRING"
+    },
+    "classroom": "250",
+    "startTime": "09:00:00",
+    "endTime": "12:00:00",
+    "dayOfWeek": "MONDAY"
+}'
+
+curl -X POST http://localhost:8086/api/post/courseInstances -H "Content-Type: application/json" -d "{\"courseCode\":\"YGW-577\",\"lecturerId\":1,\"semester\":{\"year\":2024,\"type\":\"SPRING\"},\"classroom\":\"250\",\"startTime\":\"09:00:00\",\"endTime\":\"12:00:00\",\"dayOfWeek\":\"MONDAY\"}"
+curl -X POST http://localhost:8086/api/post/courseInstances -H "Content-Type: application/json" -d "{\"courseCode\":\"YGW-577\",\"lecturerId\":3,\"semester\":{\"year\":1990,\"type\":\"FALL\"},\"classroom\":\"400\",\"startTime\":\"09:00:00\",\"endTime\":\"12:00:00\",\"dayOfWeek\":\"FRIDAY\"}"
