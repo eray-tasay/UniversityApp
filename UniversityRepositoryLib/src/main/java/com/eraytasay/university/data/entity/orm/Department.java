@@ -14,7 +14,7 @@ public class Department {
 
     public String name;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "faculty_id")
     public Faculty faculty;
 

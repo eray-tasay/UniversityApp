@@ -661,7 +661,6 @@ insert into students_to_course_instances (course_instance_id, student_id) values
 insert into students_to_course_instances (course_instance_id, student_id) values (786, 891);
 insert into students_to_course_instances (course_instance_id, student_id) values (705, 924);
 insert into students_to_course_instances (course_instance_id, student_id) values (985, 75);
-insert into students_to_course_instances (course_instance_id, student_id) values (1599, 626);
 insert into students_to_course_instances (course_instance_id, student_id) values (1820, 817);
 insert into students_to_course_instances (course_instance_id, student_id) values (1087, 184);
 insert into students_to_course_instances (course_instance_id, student_id) values (233, 27);
@@ -2998,3 +2997,4 @@ insert into students_to_course_instances (course_instance_id, student_id) values
 insert into students_to_course_instances (course_instance_id, student_id) values (849, 731);
 insert into students_to_course_instances (course_instance_id, student_id) values (103, 47);
 insert into students_to_course_instances (course_instance_id, student_id) values (646, 257);
+insert into students_to_course_instances (course_instance_id, student_id) values (700, 102);

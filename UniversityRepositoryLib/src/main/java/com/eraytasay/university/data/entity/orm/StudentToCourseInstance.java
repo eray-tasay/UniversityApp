@@ -5,16 +5,33 @@ import jakarta.persistence.*;
 @Entity
 @Table(name = "students_to_course_instances")
 public class StudentToCourseInstance {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "student_to_course_instance_id")
-    public int id;
+    @EmbeddedId
+    public StudentToCourseInstanceKey id;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "student_id")
+    @MapsId("studentId")
     public Student student;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "course_instance_id")
+    @MapsId("courseInstanceId")
     public CourseInstance courseInstance;
+
+    public StudentToCourseInstance()
+    {
+        id = new StudentToCourseInstanceKey();
+    }
+
+    @Override
+    public boolean equals(Object other)
+    {
+        return other instanceof StudentToCourseInstance sc && sc.id.equals(id);
+    }
+
+    @Override
+    public int hashCode()
+    {
+        return id.hashCode();
+    }
 }

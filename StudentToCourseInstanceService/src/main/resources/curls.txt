@@ -1,0 +1,8 @@
+curl -X POST http://localhost:8087/api/post/studentToCourseInstances \
+-H "Content-Type: application/json" \
+-d '{
+    "studentId": 1,
+    "courseInstanceId": 10
+}'
+
+curl -X POST http://localhost:8087/api/post/studentToCourseInstances -H "Content-Type: application/json" -d "{\"studentId\":1,\"courseInstanceId\":10}"

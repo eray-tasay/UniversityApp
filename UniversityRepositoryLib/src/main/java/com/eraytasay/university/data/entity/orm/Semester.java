@@ -21,4 +21,16 @@ public class Semester {
 
     @OneToMany(mappedBy = "semester")
     public Set<CourseInstance> courseInstances;
+
+    @Override
+    public int hashCode()
+    {
+        return id;
+    }
+
+    @Override
+    public boolean equals(Object other)
+    {
+        return other instanceof Semester s && s.id == id;
+    }
 }

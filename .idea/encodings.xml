@@ -17,12 +17,14 @@
     <file url="file://$PROJECT_DIR$/PreprocessingApps/ConcatenateFilesApp/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/PreprocessingApps/ReplacePlaceholdersWithUniqueNumbersApp/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/PreprocessingApps/ReplacePlaceholdersWithUniqueNumbersApp/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/ReplacePlaceholdersWithUniqueNumbersApp/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/ReplacePlaceholdersWithUniqueNumbersApp/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/StudentGetService/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/StudentPostService/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/StudentPostService/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/StudentToCourseInstanceService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/StudentToCourseInstanceService/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/UniversityRepositoryLib/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/UtilityApp/ReplacePlaceholdersWithUniqueNumbersApp/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/UtilityApp/ReplacePlaceholdersWithUniqueNumbersApp/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>

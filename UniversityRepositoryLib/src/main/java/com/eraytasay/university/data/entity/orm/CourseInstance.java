@@ -14,15 +14,15 @@ public class CourseInstance {
     @Column(name = "course_instance_id")
     public int id;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "course_id")
     public Course course;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "lecturer_id")
     public Lecturer lecturer;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "semester_id")
     public Semester semester;
 
@@ -36,7 +36,7 @@ public class CourseInstance {
     @Column(name = "day_of_week")
     public DayOfWeek dayOfWeek;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne
     @JoinColumn(name = "classroom_id")
     public Classroom classroom;
 
