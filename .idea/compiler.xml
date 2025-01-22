@@ -20,6 +20,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="ReplacePlaceholdersWithUniqueNumbersApp" />
       </profile>
       <profile name="Annotation profile for UniversityApp" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -116,11 +117,8 @@
           <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.5.5.Final/mapstruct-processor-1.5.5.Final.jar" />
           <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.5.5.Final/mapstruct-1.5.5.Final.jar" />
           <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar" />
-          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.5.5.Final/mapstruct-processor-1.5.5.Final.jar" />
-          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.5.5.Final/mapstruct-1.5.5.Final.jar" />
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.36/lombok-1.18.36.jar" />
         </processorPath>
-        <module name="com-eraytasay-university-repository" />
+        <module name="UniversityRepositoryLib" />
       </profile>
       <profile name="Annotation profile for StudentToCourseInstanceService" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
@@ -137,7 +135,6 @@
     <bytecodeTargetLevel>
       <module name="ConcatenateFilesApp" target="21" />
       <module name="CourseInstanceServiceHelper" target="21" />
-      <module name="ReplacePlaceholdersWithUniqueNumbersApp" target="21" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -152,7 +149,6 @@
       <module name="StudentToCourseInstanceService" options="-parameters" />
       <module name="UniversityApp" options="-parameters" />
       <module name="UniversityRepositoryLib" options="-parameters" />
-      <module name="com-eraytasay-university-repository" options="-parameters" />
     </option>
   </component>
 </project>
