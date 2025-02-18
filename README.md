@@ -643,7 +643,7 @@ curl -X POST http://localhost:8086/api/post/courseInstances \
 }
 ```
 ```
-/api/get/courses/name/
+/api/get/courses/name/Crist-Quitzon
 
 {
     "id": 162,
