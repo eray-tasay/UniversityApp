@@ -6,6 +6,7 @@ This project consists of 8 microservices. Microservices and their endpoints are 
 Note that some test data may seem unreleated to the domain. "[]" means that request parameter is optional.
 ```
 1) StudentGetService
+
 /api/get/students/all
 /api/get/students?cid={citizenId}
 /api/get/students/{id}
@@ -336,6 +337,7 @@ curl -X POST http://localhost:8081/api/post/students/department/id
 ```
 ```
 3) LecturerGetService
+
 /api/get/lecturers/all
 /api/get/lecturers?cid={citizenId}
 /api/get/lecturers/{id}
