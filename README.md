@@ -324,8 +324,8 @@ curl -X POST http://localhost:8081/api/post/students/department/name \
 }'
 ```
 ```
-curl -X POST http://localhost:8081/api/post/students/department/id
--H "Content-Type: application/json"
+curl -X POST http://localhost:8081/api/post/students/department/id \
+-H "Content-Type: application/json" \
 -d '{
     "firstName": "Eray",
     "lastName": "Taşay",
@@ -430,8 +430,8 @@ curl -X POST http://localhost:8083/api/post/lecturers/department/name \
 }'
 ```
 ```
-curl -X POST http://localhost:8083/api/post/lecturers/department/id
--H "Content-Type: application/json"
+curl -X POST http://localhost:8083/api/post/lecturers/department/id \
+-H "Content-Type: application/json" \
 -d '{
     "firstName": "Eray",
     "lastName": "Taşay",
