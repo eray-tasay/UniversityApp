@@ -2,7 +2,8 @@ This project does database operations that an university needs and provides a We
 
 <img width="524" alt="databaseSchema" src="https://github.com/user-attachments/assets/8911874b-b334-47d7-861f-5d79dd83d55c" />
 
-This project consists of 8 microservices. Microservices and their endpoints are explained below. To explain and test project well test data has been added. "[]" means that request parameter is optional.
+This project consists of 8 microservices. Microservices and their endpoints are explained below. To explain and test project well test data has been added. 
+Note that some test data may seem unreleated to the domain. "[]" means that request parameter is optional.
 ```
 1) StudentGetService
 /api/get/students/all
@@ -445,5 +446,229 @@ curl -X POST http://localhost:8083/api/post/lecturers/department/id
 /api/get/courseInstances/lecturer/{id}: Get all course instances taught by a lecturer.
 ```
 ```
+/api/get/courseInstances/student/20
 
+{
+    "courseInstances": [
+        {
+            "id": 171,
+            "course": {
+                "code": "SEZ-518",
+                "name": "Heidenreich, Muller and Collier"
+            },
+            "lecturerFullName": "Adrea Bailie",
+            "semester": {
+                "year": 2019,
+                "type": "SPRING"
+            },
+            "startTime": "17:32:00",
+            "endTime": "23:11:00",
+            "dayOfWeek": "FRIDAY",
+            "classroom": "133"
+        },
+        {
+            "id": 1173,
+            "course": {
+                "code": "PFZ-728",
+                "name": "Altenwerth-Weber"
+            },
+            "lecturerFullName": "Chiquia Mc Trusty",
+            "semester": {
+                "year": 2023,
+                "type": "SPRING"
+            },
+            "startTime": "16:52:00",
+            "endTime": "22:53:00",
+            "dayOfWeek": "THURSDAY",
+            "classroom": "210"
+        },
+        {
+            "id": 1135,
+            "course": {
+                "code": "CXK-545",
+                "name": "Graham-Wilkinson"
+            },
+            "lecturerFullName": "Brittany Botterill",
+            "semester": {
+                "year": 2024,
+                "type": "FALL"
+            },
+            "startTime": "16:35:00",
+            "endTime": "03:24:00",
+            "dayOfWeek": "THURSDAY",
+            "classroom": "36"
+        },
+        {
+            "id": 104,
+            "course": {
+                "code": "DFK-647",
+                "name": "Rogahn LLC"
+            },
+            "lecturerFullName": "Ned Cookie Havill",
+            "semester": {
+                "year": 2025,
+                "type": "FALL"
+            },
+            "startTime": "22:53:00",
+            "endTime": "07:14:00",
+            "dayOfWeek": "WEDNESDAY",
+            "classroom": "48"
+        },
+        {
+            "id": 1629,
+            "course": {
+                "code": "VHJ-893",
+                "name": "Volkman Group"
+            },
+            "lecturerFullName": "Dimitry Minni Hateley",
+            "semester": {
+                "year": 2023,
+                "type": "SPRING"
+            },
+            "startTime": "13:43:00",
+            "endTime": "22:43:00",
+            "dayOfWeek": "TUESDAY",
+            "classroom": "239"
+        }
+    ]
+}
+```
+```
+/api/get/courseInstances/lecturer/11
+
+{
+    "courseInstances": [
+        {
+            "id": 219,
+            "course": {
+                "code": "HMU-129",
+                "name": "Hauck Group"
+            },
+            "lecturerFullName": "Rudolf Alaine Earpe",
+            "semester": {
+                "year": 2023,
+                "type": "SPRING"
+            },
+            "startTime": "22:48:00",
+            "endTime": "21:19:00",
+            "dayOfWeek": "WEDNESDAY",
+            "classroom": "192"
+        },
+        {
+            "id": 246,
+            "course": {
+                "code": "ZNP-477",
+                "name": "Klocko Group"
+            },
+            "lecturerFullName": "Rudolf Alaine Earpe",
+            "semester": {
+                "year": 2018,
+                "type": "FALL"
+            },
+            "startTime": "19:56:00",
+            "endTime": "20:59:00",
+            "dayOfWeek": "TUESDAY",
+            "classroom": "81"
+        }, ...
+    ]
+}
+```
+```
+6) CourseInstancePostService
+
+/api/post/courseInstances
+```
+```
+curl -X POST http://localhost:8086/api/post/courseInstances \
+-H "Content-Type: application/json" \
+-d '{
+    "courseCode": "YGW-577",
+    "lecturerId": 1,
+    "semester": {
+        "year": 2024,
+        "type": "SPRING"
+    },
+    "classroom": "250",
+    "startTime": "09:00:00",
+    "endTime": "12:00:00",
+    "dayOfWeek": "MONDAY"
+}'
+```
+```
+7) CourseService
+
+/api/get/courses/all
+/api/get/courses/{id}
+/api/get/courses/code/{code}
+/api/get/courses/name/{name}
+/api/post/courses
+```
+```
+/api/get/courses/all
+
+{
+    "courses": [
+        {
+            "id": 1,
+            "code": "HMK-100",
+            "name": "Zieme LLC"
+        },
+        {
+            "id": 2,
+            "code": "VKS-614",
+            "name": "Stracke and Sons"
+        }, ...
+    ]
+}
+
+```
+```
+/api/get/courses/20
+
+{
+    "id": 20,
+    "code": "ZNP-477",
+    "name": "Klocko Group"
+}
+```
+```
+/api/get/courses/code/DXZ-891
+
+{
+    "id": 10,
+    "code": "DXZ-891",
+    "name": "Gusikowski Group"
+}
+```
+```
+/api/get/courses/name/
+
+{
+    "id": 162,
+    "code": "SEZ-979",
+    "name": "Crist-Quitzon"
+}
+```
+```
+curl -X POST http://localhost:8084/api/post/courses \
+-H "Content-Type: application/json" \
+-d '{
+    "code": "CS-50",
+    "name": "Introduction to Computer Science"
+}'
+```
+```
+8) StudentToCourseInstanceService
+
+This service is used to associate a student with a course instance.
+
+/api/post/studentToCourseInstances
+```
+```
+curl -X POST http://localhost:8087/api/post/studentToCourseInstances \
+-H "Content-Type: application/json" \
+-d '{
+    "studentId": 1,
+    "courseInstanceId": 10
+}'
 ```
