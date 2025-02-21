@@ -7,8 +7,6 @@ import com.eraytasay.university.data.mapper.IStudentMapper;
 import com.eraytasay.university.data.mapper.IStudentSaveDTOMapper;
 import com.eraytasay.university.data.repository.IStudentRepository;
 import org.springframework.stereotype.Component;
-import org.springframework.transaction.annotation.Isolation;
-import org.springframework.transaction.annotation.Transactional;
 
 @Component
 public class StudentPostServiceHelper {

@@ -8,15 +8,11 @@ import com.eraytasay.university.service.post.student.exception.unique.NotUniqueC
 import com.eraytasay.university.service.post.student.exception.unique.NotUniqueEmailException;
 import com.eraytasay.university.service.post.student.service.StudentService;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api/post/students")
-public class
-StudentController {
+public class StudentController {
     private final StudentService m_studentService;
 
     public StudentController(StudentService studentService)
